@@ -55,7 +55,10 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center">
+    <div className="min-h-screen flex flex-col items-center justify-center"
+    style={{
+      background: "linear-gradient(to bottom right, #bfbfbf 60%, #30325e 50%)",
+    }}>
       <h1 className="text-2xl font-bold mb-6 text-black">Event Calendar</h1>
       <Calendar onDayClick={handleDayClick} events={events} />
       {selectedDate && (
